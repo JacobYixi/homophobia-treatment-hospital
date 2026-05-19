@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | 博爱恐同症矫治医院',
   },
   description:
-    '博爱恐同症矫治医院 — 你当年觉得同性恋需要"治疗"？现在轮到你了。',
+    '博爱恐同症矫治医院 — 专注于恐同症的临床研究与系统矫治，采用中西医结合的综合干预方案，帮助患者重获包容与理解的能力。',
 };
 
 export default function RootLayout({

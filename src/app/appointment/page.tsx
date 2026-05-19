@@ -10,6 +10,7 @@ const departments = [
   '强制劳动科',
   '药物干预科',
   '羞耻疗法科',
+  '中药调理科',
 ];
 
 const timeSlots = [

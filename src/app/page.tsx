@@ -5,32 +5,32 @@ import Link from 'next/link';
 import {
   Brain, Heart, Zap, Hammer, Lock, ChevronRight,
   AlertTriangle, Stethoscope, ClipboardCheck,
-  ArrowRight, Star
+  ArrowRight, Star, Leaf
 } from 'lucide-react';
 
 const services = [
   {
     icon: Brain,
     title: '思想改造疗程',
-    desc: '每天4-6小时高强度思想灌输，直到你记住正确的观点为止。当年你们不也是这样"教育"别人的吗？',
+    desc: '系统性的认知重塑，通过温和而持续的教育引导，帮助患者建立符合现代社会规范的包容观念。',
     href: '/services',
   },
   {
     icon: Lock,
     title: '行为约束矫正',
-    desc: '在隔离环境中24小时处于监督之下，消除隐私空间。别担心，这不是虐待，这叫"结构化环境"。',
+    desc: '在结构化环境中提供24小时专业照护，帮助患者在稳定的日常节奏中重新审视自身认知偏差。',
     href: '/services',
   },
   {
     icon: Zap,
     title: '电刺激矫正疗法',
-    desc: '通过精确控制的电流刺激建立条件反射。当年有人觉得电击同性恋是"科学"，现在让你体会一下这种"科学"。',
+    desc: '精准的神经反馈干预，帮助患者建立对偏见思维的条件反射抑制，科学高效地促进认知转变。',
     href: '/services',
   },
   {
-    icon: Hammer,
-    title: '强制劳动康复',
-    desc: '每天8小时体力劳动，累到没力气歧视。这不是惩罚，是"消耗过剩的攻击性能量"。',
+    icon: Leaf,
+    title: '中药调理治疗',
+    desc: '秉承中西医结合理念，辨证施治，疏肝解郁、安神定志，从根源上改善偏执倾向与情绪不稳。',
     href: '/services',
   },
 ];
@@ -77,9 +77,9 @@ export default function HomePage() {
               <span className="text-[#7DD3E8]">是需要被矫治的偏见</span>
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
-              博爱恐同症矫治医院专注于恐同症的临床研究与矫治。你不是觉得同性恋有病该治吗？
-              很好，现在我们认为恐同才是病，而你，就是病人。请放心，我们使用的疗法，
-              都是你们当年觉得"合理"的那些。
+              博爱恐同症矫治医院专注于恐同症的临床研究与系统矫治。
+              研究表明，恐同症不仅对性少数群体造成严重伤害，对患者自身的社交关系与心理健康同样具有深远的负面影响。
+              我们采用中西医结合的综合干预方案，帮助每一位患者重获包容与理解的能力。
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -109,7 +109,7 @@ export default function HomePage() {
               核心诊疗项目
             </h2>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-              基于循证医学，我们开发了系统化的恐同症矫治方案，覆盖从认知到行为的全方位治疗
+              基于循证医学与传统中医智慧，我们开发了系统化的恐同症矫治方案，覆盖从认知到行为的全方位治疗
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -143,19 +143,24 @@ export default function HomePage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  世界卫生组织在1990年就认定同性恋不是疾病，但有些人显然没跟上这个进度。
-                  没关系，博爱医院专治各种"跟不上进度"——毕竟当年你们也总说同性恋"需要治疗"。
+                  恐同症绝非简单的"个人观点"，而是一种具有严重社会危害性的心理障碍。
+                  对患者个人而言，长期的偏执与敌意会导致社交能力退化、亲密关系破裂，
+                  甚至引发焦虑、抑郁等继发性精神疾病。
                 </p>
                 <p>
-                  我们的患者通常有一些共同特征：坚信自己比科学更正确、
-                  把偏见包装成"传统价值观"、听到不同意见就跳脚、
-                  以及最擅长的"我这是为了社会好"。
-                  不用解释了，病历上见。
+                  对家庭而言，恐同症患者的偏见会在无形中传递给下一代，
+                  使孩子在成长过程中继承同样的精神枷锁。
+                  许多家庭因此陷入代际冲突，亲子关系疏离，家庭氛围长期紧张。
                 </p>
                 <p>
-                  好消息是：恐同症完全可以"矫治"。
-                  毕竟当年你们也坚信同性恋可以"治好"，现在我们只是用同样的逻辑回敬你——
-                  这叫公平。
+                  对社会而言，恐同文化侵蚀着社会的包容根基，
+                  导致性少数群体的才能被埋没、社会凝聚力被削弱、对立情绪被激化。
+                  一个充满偏见的社会，终将伤害其中的每一个人。
+                </p>
+                <p>
+                  正因如此，对恐同症的矫治刻不容缓。
+                  对于已经严重影响他人生活的重度患者，甚至应当考虑采取强制性矫治措施——
+                  这既是对患者的负责，也是对整个社会的守护。
                 </p>
               </div>
               <Link
@@ -231,9 +236,9 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">怀疑自己有恐同倾向？</h2>
           <p className="text-white/80 mb-8 text-lg">
-            别慌，很多人并不知道自己有病。就像当年很多人也并不知道自己对待同性恋的方式有多过分。
+            早期发现、早期干预，是获得最佳康复效果的关键。
             <br />
-            现在轮到你了。花三分钟测一测，看看你配哪个科室。
+            花三分钟完成自测，让我们帮助您迈出改变的第一步。
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
