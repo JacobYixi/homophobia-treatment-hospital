@@ -573,10 +573,7 @@ export default function AssessmentPage() {
                   <CheckCircle2 className="w-4 h-4 text-[#0C6B8A] shrink-0 mt-0.5" />
                   所有数据仅在本地处理，不会上传或保存
                 </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#0C6B8A] shrink-0 mt-0.5" />
-                  题目和选项顺序每次进入均随机打乱
-                </li>
+
               </ul>
             </div>
             <button
