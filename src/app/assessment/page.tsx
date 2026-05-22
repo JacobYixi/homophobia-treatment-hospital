@@ -549,7 +549,7 @@ export default function AssessmentPage() {
               <div>
                 <p className="text-sm text-yellow-800 font-medium">仅供娱乐</p>
                 <p className="text-sm text-yellow-700 mt-1">
-                  本测试纯属娱乐性质，旨在帮助用户进行自我反思，不具有任何临床诊断效力。
+                  本测试纯属娱乐性质，结果仅供参考，不具有任何临床诊断效力。
                 </p>
               </div>
             </div>
