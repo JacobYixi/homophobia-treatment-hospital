@@ -619,7 +619,7 @@ export default function AssessmentPage() {
               <Info className="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" />
               <p className="text-sm text-yellow-700">
                 <span className="font-medium">仅供娱乐：</span>
-                本测试结果不具备任何医学诊断效力。请勿以此标签化自己或他人。
+                本测试结果不具备任何医学诊断效力。
               </p>
             </div>
 
@@ -638,6 +638,34 @@ export default function AssessmentPage() {
                 {result.desc}
               </p>
             </div>
+
+            {percentage <= 35 && answers.some((a) => a > 0) && (
+              <div className="bg-blue-50 border border-blue-100 rounded-lg p-6 mb-8">
+                <h3 className="font-bold text-gray-800 mb-3">还可以留意的地方</h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                  您在大部分问题上都展现了包容的态度，以下 {answers.filter((a) => a > 0).length} 个问题的回答还有可以留意的空间，供您参考：
+                </p>
+                <ul className="space-y-3 text-sm text-gray-600">
+                  {questions
+                    .map((q, i) => ({ q, i, score: answers[i] }))
+                    .filter(({ score }) => score > 0)
+                    .map(({ q, i, score }) => (
+                      <li key={i} className="flex gap-3">
+                        <span className="text-[#0C6B8A] font-bold shrink-0">Q{i + 1}</span>
+                        <span className="leading-relaxed">
+                          {q.text}
+                          {score >= 2 && (
+                            <span className="text-gray-400 ml-1">（回答倾向较明显）</span>
+                          )}
+                        </span>
+                      </li>
+                    ))}
+                </ul>
+                <p className="text-sm text-gray-500 leading-relaxed mt-4 pt-4 border-t border-blue-100">
+                  每个人对不熟悉的话题都需要一些时间去了解，这很正常。如果您愿意，可以试着从不同角度听听相关的经历和故事，或许会有些新的体会。
+                </p>
+              </div>
+            )}
 
             <div className="bg-[#F5F7FA] rounded-lg p-6 mb-8">
               <h3 className="font-bold text-gray-800 mb-3">建议</h3>
