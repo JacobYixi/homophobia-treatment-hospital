@@ -619,7 +619,7 @@ export default function AssessmentPage() {
               <Info className="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" />
               <p className="text-sm text-yellow-700">
                 <span className="font-medium">仅供娱乐：</span>
-                本测试结果仅为娱乐性质的自我反思参考，不具备任何医学诊断效力。请勿以此标签化自己或他人。
+                本测试结果不具备任何医学诊断效力。请勿以此标签化自己或他人。
               </p>
             </div>
 
