@@ -549,7 +549,7 @@ export default function AssessmentPage() {
               <div>
                 <p className="text-sm text-yellow-800 font-medium">仅供娱乐</p>
                 <p className="text-sm text-yellow-700 mt-1">
-                  本测试纯属娱乐性质，题目顺序和选项顺序每次打开都会随机变化，旨在帮助用户进行自我反思，不具有任何临床诊断效力。请理性看待测试结果，切勿对号入座或以此评判他人。
+                  本测试纯属娱乐性质，旨在帮助用户进行自我反思，不具有任何临床诊断效力。
                 </p>
               </div>
             </div>
