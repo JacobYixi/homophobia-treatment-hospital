@@ -16,3 +16,6 @@ coverage/
 assets/
 static-server.js
 tsconfig.tsbuildinfo
+
+# Preview files
+.preview
