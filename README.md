@@ -1,4 +1,6 @@
-# 博爱恐同症矫治医院
+# 博爱恐同症矫治医院（新版，可能会冷不丁更新）
+
+> 旧版仓库考古：[old-broadlovehch](https://github.com/JacobYixi/old-broadlovehch)
 
 > 这是一个讽刺性艺术项目。
 
