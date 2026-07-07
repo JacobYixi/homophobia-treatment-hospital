@@ -16,4 +16,3 @@ coverage/
 assets/
 static-server.js
 tsconfig.tsbuildinfo
-favicon.ico
